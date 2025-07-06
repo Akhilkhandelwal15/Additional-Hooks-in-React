@@ -1,4 +1,6 @@
 import './App.css'
+import { HomeComponent } from './contextAPI/HomeComponent'
+import { ThemeProvider } from './contextAPI/ThemeContext'
 import { ForwardRefHook } from './ForwardRefHook'
 import { UseRefHook } from './UseRefHook'
 import { UseRefHook2 } from './UseRefHook2'
@@ -13,7 +15,10 @@ function App() {
       <UseRefHook2 />
       <UseRefHook3 /> */}
       {/* <UseRefHook4 /> */}
-      <ForwardRefHook />
+      {/* <ForwardRefHook /> */}
+      <ThemeProvider>
+        <HomeComponent />
+      </ThemeProvider>
     </>
   )
 }
