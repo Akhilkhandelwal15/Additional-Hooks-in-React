@@ -35,18 +35,18 @@ const BeforeReact19 = forwardRef((props, ref)=>{
     return (
         <div>
             <label htmlFor={id}>{props.label}</label>
-            <input type={props.type} ref={ref} />
+            <input type={props.type} ref={ref} id={id}/>
         </div>
     );
 });
 
 //child component
 const AfterReact19 = ({type, label, ref})=>{
-    const id = useId();
+    const id = useId(); // it generates a unique id
     return (
         <div>
             <label htmlFor={id}>{label}</label>
-            <input type={type} ref={ref} />
+            <input type={type} ref={ref} id={id}/>
         </div>
     );
 }
