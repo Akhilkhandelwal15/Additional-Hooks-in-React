@@ -2,6 +2,7 @@ import './App.css'
 import { HomeComponent } from './contextAPI/HomeComponent'
 import { ThemeProvider } from './contextAPI/ThemeContext'
 import { ForwardRefHook } from './ForwardRefHook'
+import { UseReduecerHook2 } from './useReducerHook-improved/UseReducerHook2'
 import { UseReduecerHook } from './useReducerHook/UseReducerHook'
 import { UseRefHook } from './UseRefHook'
 import { UseRefHook2 } from './UseRefHook2'
@@ -20,7 +21,8 @@ function App() {
       {/* <ThemeProvider>
         <HomeComponent />
       </ThemeProvider> */}
-      <UseReduecerHook />
+      {/* <UseReduecerHook /> */}
+      <UseReduecerHook2 />
     </>
   )
 }
