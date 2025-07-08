@@ -33,3 +33,11 @@
 
 - useId provides a unique and consistent ID for each component instance.
 - Use it for generating id attributes in forms or ARIA properties to ensure accessibility.
+
+## context API
+
+## useReducer Hook
+
+## React.memo
+
+## useMemo Hook
