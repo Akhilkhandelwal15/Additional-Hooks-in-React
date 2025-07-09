@@ -4,6 +4,7 @@ import { ThemeProvider } from './contextAPI/ThemeContext'
 import { ForwardRefHook } from './ForwardRefHook'
 import { ReactMemo } from './React-Memo/ReactMemo'
 import { ParentMemoComponent } from './React.memo+useMemo/ParentMemoComponent'
+import { CountComponent } from './UseCallbackHook/CountComponent'
 import { MemoParentComponent } from './useMemoHook/MemoParentComponent'
 import { UseReduecerHook2 } from './useReducerHook-improved/UseReducerHook2'
 import { UseReduecerHook } from './useReducerHook/UseReducerHook'
@@ -28,7 +29,8 @@ function App() {
       {/* <UseReduecerHook2 /> */}
       {/* <ReactMemo /> */}
       {/* <MemoParentComponent /> */}
-      <ParentMemoComponent />
+      {/* <ParentMemoComponent /> */}
+      <CountComponent />
     </>
   )
 }
